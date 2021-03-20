@@ -1,11 +1,7 @@
 <script>
     let second;
     function blockHandler(event) {
-        if (
-            event.target.id == "red" ||
-            event.target.id == "blue" ||
-            event.target.id == "green"
-        ) {
+        if (event.target.classList.contains("block")) {
             event.target.style.visibility = "hidden";
         } else {
             for (let block of second.children) {
